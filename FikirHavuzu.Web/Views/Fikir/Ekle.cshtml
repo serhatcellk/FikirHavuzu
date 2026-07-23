@@ -1,0 +1,22 @@
+@model FikirHavuzu.Entities.Fikir
+@using FikirHavuzu.Entities
+
+@{
+    ViewData["Title"] = "Yeni Fikir";
+    var kullanicilar = ViewBag.Kullanicilar as List<Kullanici>;
+}
+
+<h2>Yeni Fikir / Öneri</h2>
+
+<form asp-action="Ekle" method="post">
+    <div class="mb-2">
+        <label>Başlık</label>
+        <input asp-for="Baslik" class="form-control" />
+    </div>
+    <div class="mb-2">
+        <label>Açıklama</label>
+        <textarea asp-for="Aciklama" class="form-control" rows="4"></textarea>
+    </div>
+    <button type="submit" class="btn btn-success mt-2">Kaydet</button>
+    <a asp-action="Index" class="btn btn-secondary mt-2">İptal</a>
+</form>

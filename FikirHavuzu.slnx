@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="FikirHavuzu.Entities/FikirHavuzu.Entities.csproj" />
+  <Project Path="FikirHavuzu.Repositories/FikirHavuzu.Repositories.csproj" />
+  <Project Path="FikirHavuzu.Services/FikirHavuzu.Services.csproj" />
+  <Project Path="FikirHavuzu.Web/FikirHavuzu.Web.csproj" />
+</Solution>

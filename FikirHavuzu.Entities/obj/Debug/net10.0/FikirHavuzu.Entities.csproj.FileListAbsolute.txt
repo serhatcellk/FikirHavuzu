@@ -1,0 +1,11 @@
+C:\FikirHavuzu\FikirHavuzu.Entities\bin\Debug\net10.0\FikirHavuzu.Entities.deps.json
+C:\FikirHavuzu\FikirHavuzu.Entities\bin\Debug\net10.0\FikirHavuzu.Entities.dll
+C:\FikirHavuzu\FikirHavuzu.Entities\bin\Debug\net10.0\FikirHavuzu.Entities.pdb
+C:\FikirHavuzu\FikirHavuzu.Entities\obj\Debug\net10.0\FikirHavuzu.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\FikirHavuzu\FikirHavuzu.Entities\obj\Debug\net10.0\FikirHavuzu.Entities.AssemblyInfoInputs.cache
+C:\FikirHavuzu\FikirHavuzu.Entities\obj\Debug\net10.0\FikirHavuzu.Entities.AssemblyInfo.cs
+C:\FikirHavuzu\FikirHavuzu.Entities\obj\Debug\net10.0\FikirHavuzu.Entities.csproj.CoreCompileInputs.cache
+C:\FikirHavuzu\FikirHavuzu.Entities\obj\Debug\net10.0\FikirHavuzu.Entities.dll
+C:\FikirHavuzu\FikirHavuzu.Entities\obj\Debug\net10.0\refint\FikirHavuzu.Entities.dll
+C:\FikirHavuzu\FikirHavuzu.Entities\obj\Debug\net10.0\FikirHavuzu.Entities.pdb
+C:\FikirHavuzu\FikirHavuzu.Entities\obj\Debug\net10.0\ref\FikirHavuzu.Entities.dll

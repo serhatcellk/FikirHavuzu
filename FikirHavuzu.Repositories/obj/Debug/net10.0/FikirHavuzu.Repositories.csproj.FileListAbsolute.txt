@@ -1,0 +1,17 @@
+C:\FikirHavuzu\FikirHavuzu.Repositories\bin\Debug\net10.0\FikirHavuzu.Repositories.deps.json
+C:\FikirHavuzu\FikirHavuzu.Repositories\bin\Debug\net10.0\FikirHavuzu.Repositories.dll
+C:\FikirHavuzu\FikirHavuzu.Repositories\bin\Debug\net10.0\FikirHavuzu.Repositories.pdb
+C:\FikirHavuzu\FikirHavuzu.Repositories\bin\Debug\net10.0\FikirHavuzu.Entities.dll
+C:\FikirHavuzu\FikirHavuzu.Repositories\bin\Debug\net10.0\FikirHavuzu.Entities.pdb
+C:\FikirHavuzu\FikirHavuzu.Repositories\obj\Debug\net10.0\FikirHavuzu.Repositories.csproj.AssemblyReference.cache
+C:\FikirHavuzu\FikirHavuzu.Repositories\obj\Debug\net10.0\FikirHavuzu.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\FikirHavuzu\FikirHavuzu.Repositories\obj\Debug\net10.0\FikirHavuzu.Repositories.AssemblyInfoInputs.cache
+C:\FikirHavuzu\FikirHavuzu.Repositories\obj\Debug\net10.0\FikirHavuzu.Repositories.AssemblyInfo.cs
+C:\FikirHavuzu\FikirHavuzu.Repositories\obj\Debug\net10.0\FikirHavuzu.Repositories.csproj.CoreCompileInputs.cache
+C:\FikirHavuzu\FikirHavuzu.Repositories\obj\Debug\net10.0\FikirHav.5ED65C91.Up2Date
+C:\FikirHavuzu\FikirHavuzu.Repositories\obj\Debug\net10.0\FikirHavuzu.Repositories.dll
+C:\FikirHavuzu\FikirHavuzu.Repositories\obj\Debug\net10.0\refint\FikirHavuzu.Repositories.dll
+C:\FikirHavuzu\FikirHavuzu.Repositories\obj\Debug\net10.0\FikirHavuzu.Repositories.pdb
+C:\FikirHavuzu\FikirHavuzu.Repositories\obj\Debug\net10.0\ref\FikirHavuzu.Repositories.dll
+C:\FikirHavuzu\FikirHavuzu.Repositories\bin\Debug\net10.0\FikirHavuzu.Repositories.runtimeconfig.json
+C:\FikirHavuzu\FikirHavuzu.Repositories\obj\Debug\net10.0\FikirHavuzu.Repositories.genruntimeconfig.cache

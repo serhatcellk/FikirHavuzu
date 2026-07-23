@@ -1,0 +1,48 @@
+@model List<FikirHavuzu.Entities.Fikir>
+@using FikirHavuzu.Entities
+
+@{
+    ViewData["Title"] = "Fikirler";
+    var secili = ViewBag.SeciliDurum as FikirDurumu?;
+}
+
+<h2>Fikirler / Öneriler</h2>
+
+<a asp-action="Ekle" class="btn btn-primary mb-3">Yeni Fikir</a>
+
+<div class="mb-3">
+    <a asp-action="Index" class="btn btn-sm @(secili == null ? "btn-dark" : "btn-outline-dark")">Tümü</a>
+    <a asp-action="Index" asp-route-durum="@FikirDurumu.Beklemede" class="btn btn-sm @(secili == FikirDurumu.Beklemede ? "btn-dark" : "btn-outline-dark")">Beklemede</a>
+    <a asp-action="Index" asp-route-durum="@FikirDurumu.Kabul" class="btn btn-sm @(secili == FikirDurumu.Kabul ? "btn-dark" : "btn-outline-dark")">Kabul</a>
+    <a asp-action="Index" asp-route-durum="@FikirDurumu.Red" class="btn btn-sm @(secili == FikirDurumu.Red ? "btn-dark" : "btn-outline-dark")">Red</a>
+    <a asp-action="Index" asp-route-durum="@FikirDurumu.Uygulandi" class="btn btn-sm @(secili == FikirDurumu.Uygulandi ? "btn-dark" : "btn-outline-dark")">Uygulandı</a>
+</div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Başlık</th>
+            <th>Öneri Sahibi</th>
+            <th>Durum</th>
+            <th>Puan</th>
+            <th>Tarih</th>
+            <th>İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var f in Model)
+        {
+            <tr>
+                <td>@f.Baslik</td>
+                <td>@f.Kullanici?.Ad @f.Kullanici?.Soyad</td>
+                <td>@f.Durum</td>
+                <td>@(f.Puan?.ToString() ?? "-")</td>
+                <td>@f.OlusturmaTarihi.ToShortDateString()</td>
+                <td>
+                    <a asp-action="Degerlendir" asp-route-id="@f.Id"
+                       class="btn btn-sm btn-info">Değerlendir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

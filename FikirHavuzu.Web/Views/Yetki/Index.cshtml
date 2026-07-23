@@ -1,0 +1,24 @@
+@model List<FikirHavuzu.Entities.Yetki>
+
+@{
+    ViewData["Title"] = "Yetkiler";
+}
+
+<h2>Yetkiler</h2>
+<table class="table table-bordered" style="max-width:400px;">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Yetki Adı</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var y in Model)
+        {
+            <tr>
+                <td>@y.Id</td>
+                <td>@y.Ad</td>
+            </tr>
+        }
+    </tbody>
+</table>

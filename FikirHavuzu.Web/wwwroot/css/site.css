@@ -1,0 +1,175 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+/* ===== FikirHavuzu Kurumsal Tema ===== */
+
+:root {
+    --lacivert: #1e293b;
+    --lacivert-koyu: #0f172a;
+    --lacivert-acik: #334155;
+    --gri: #64748b;
+    --gri-acik: #f1f5f9;
+    --vurgu: #3b82f6;
+}
+
+body {
+    background-color: var(--gri-acik);
+    color: var(--lacivert);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--lacivert) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #e2e8f0 !important;
+    font-weight: 500;
+}
+.navbar .nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* Başlıklar */
+h1, h2, h3, h4, h5 {
+    color: var(--lacivert-koyu);
+    font-weight: 600;
+}
+
+/* Kartlar */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15,23,42,0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(15,23,42,0.12);
+}
+.card-title {
+    color: var(--lacivert);
+    font-weight: 600;
+}
+
+/* Tablolar */
+.table {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(15,23,42,0.06);
+}
+.table thead {
+    background-color: var(--lacivert);
+    color: #ffffff;
+}
+.table thead th {
+    border: none;
+    font-weight: 600;
+    padding: 12px;
+}
+.table tbody td {
+    padding: 12px;
+    vertical-align: middle;
+    border-color: #e2e8f0;
+}
+.table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Butonlar */
+.btn-primary {
+    background-color: var(--vurgu);
+    border-color: var(--vurgu);
+    font-weight: 500;
+}
+.btn-primary:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+.btn-secondary {
+    background-color: var(--gri);
+    border-color: var(--gri);
+}
+.btn-success {
+    background-color: #059669;
+    border-color: #059669;
+}
+.btn-warning {
+    background-color: #d97706;
+    border-color: #d97706;
+    color: #fff;
+}
+.btn-info {
+    background-color: var(--lacivert-acik);
+    border-color: var(--lacivert-acik);
+    color: #fff;
+}
+.btn-info:hover {
+    background-color: var(--lacivert);
+    color: #fff;
+}
+.btn {
+    border-radius: 8px;
+}
+
+/* Formlar */
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    padding: 10px;
+}
+.form-control:focus, .form-select:focus {
+    border-color: var(--vurgu);
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+}
+label {
+    font-weight: 500;
+    color: var(--lacivert-acik);
+    margin-bottom: 4px;
+}
+
+/* Footer */
+.footer {
+    background-color: #ffffff;
+    color: var(--gri);
+    border-top: 1px solid #e2e8f0 !important;
+}
+
+/* Alert */
+.alert-danger {
+    border-radius: 8px;
+    background-color: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}

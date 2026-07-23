@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="text-center">
+    <h1 class="display-5 mb-4">Fikir Havuzu Uygulaması</h1>
+    <p class="text-muted mb-5">Çalışan fikir ve önerilerini yönetin.</p>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-4 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Kullanıcılar</h5>
+                <p class="card-text">Kullanıcı ekle, düzenle, pasife al.</p>
+                <a asp-controller="Kullanici" asp-action="Index" class="btn btn-primary">Git</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Fikirler</h5>
+                <p class="card-text">Fikir gir, listele, değerlendir.</p>
+                <a asp-controller="Fikir" asp-action="Index" class="btn btn-primary">Git</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Liderlik</h5>
+                <p class="card-text">Ödül puanı sıralaması.</p>
+                <a asp-controller="Liderlik" asp-action="Index" class="btn btn-primary">Git</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Yetkiler</h5>
+                <p class="card-text">Rolleri gör, kullanıcılara ata.</p>
+                <a asp-controller="Yetki" asp-action="Index" class="btn btn-primary">Git</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+@model FikirHavuzu.Entities.Kullanici
+
+@{
+    ViewData["Title"] = "Yeni Kullanıcı";
+}
+
+<h2>Yeni Kullanıcı</h2>
+
+<form asp-action="Ekle" method="post">
+    <div class="mb-2">
+        <label>Ad</label>
+        <input asp-for="Ad" class="form-control" />
+    </div>
+    <div class="mb-2">
+        <label>Soyad</label>
+        <input asp-for="Soyad" class="form-control" />
+    </div>
+    <div class="mb-2">
+        <label>Mail</label>
+        <input asp-for="MailAdresi" class="form-control" />
+    </div>
+    <div class="mb-2">
+        <label>Telefon</label>
+        <input asp-for="TelefonNumarasi" class="form-control" />
+    </div>
+    <div class="mb-2">
+        <label>Sicil No</label>
+        <input asp-for="SicilNumarasi" class="form-control" />
+    </div>
+    <div class="mb-2">
+        <label>TC Kimlik No</label>
+        <input asp-for="TCKimlikNumarasi" class="form-control" />
+    </div>
+    <div class="mb-2">
+        <label>Şifre</label>
+        <input type="password" name="sifre" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success mt-2">Kaydet</button>
+    <a asp-action="Index" class="btn btn-secondary mt-2">İptal</a>
+</form>

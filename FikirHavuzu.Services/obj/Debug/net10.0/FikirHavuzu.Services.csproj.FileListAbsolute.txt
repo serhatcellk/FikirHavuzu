@@ -1,0 +1,17 @@
+C:\FikirHavuzu\FikirHavuzu.Services\bin\Debug\net10.0\FikirHavuzu.Services.deps.json
+C:\FikirHavuzu\FikirHavuzu.Services\bin\Debug\net10.0\FikirHavuzu.Services.dll
+C:\FikirHavuzu\FikirHavuzu.Services\bin\Debug\net10.0\FikirHavuzu.Services.pdb
+C:\FikirHavuzu\FikirHavuzu.Services\bin\Debug\net10.0\FikirHavuzu.Entities.dll
+C:\FikirHavuzu\FikirHavuzu.Services\bin\Debug\net10.0\FikirHavuzu.Repositories.dll
+C:\FikirHavuzu\FikirHavuzu.Services\bin\Debug\net10.0\FikirHavuzu.Repositories.pdb
+C:\FikirHavuzu\FikirHavuzu.Services\bin\Debug\net10.0\FikirHavuzu.Entities.pdb
+C:\FikirHavuzu\FikirHavuzu.Services\obj\Debug\net10.0\FikirHavuzu.Services.csproj.AssemblyReference.cache
+C:\FikirHavuzu\FikirHavuzu.Services\obj\Debug\net10.0\FikirHavuzu.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\FikirHavuzu\FikirHavuzu.Services\obj\Debug\net10.0\FikirHavuzu.Services.AssemblyInfoInputs.cache
+C:\FikirHavuzu\FikirHavuzu.Services\obj\Debug\net10.0\FikirHavuzu.Services.AssemblyInfo.cs
+C:\FikirHavuzu\FikirHavuzu.Services\obj\Debug\net10.0\FikirHavuzu.Services.csproj.CoreCompileInputs.cache
+C:\FikirHavuzu\FikirHavuzu.Services\obj\Debug\net10.0\FikirHav.FDECAFE3.Up2Date
+C:\FikirHavuzu\FikirHavuzu.Services\obj\Debug\net10.0\FikirHavuzu.Services.dll
+C:\FikirHavuzu\FikirHavuzu.Services\obj\Debug\net10.0\refint\FikirHavuzu.Services.dll
+C:\FikirHavuzu\FikirHavuzu.Services\obj\Debug\net10.0\FikirHavuzu.Services.pdb
+C:\FikirHavuzu\FikirHavuzu.Services\obj\Debug\net10.0\ref\FikirHavuzu.Services.dll

@@ -1,0 +1,64 @@
+@using FikirHavuzu.Entities
+
+@{
+    ViewData["Title"] = "Yetki Ata";
+    var kullanici = ViewBag.Kullanici as Kullanici;
+    var tumYetkiler = ViewBag.TumYetkiler as List<Yetki>;
+    var mevcutYetkiler = ViewBag.MevcutYetkiler as List<KullaniciYetki>;
+    var mevcutIdler = mevcutYetkiler.Select(m => m.YetkiId).ToList();
+}
+
+<h2>Yetki Ata — @kullanici.Ad @kullanici.Soyad</h2>
+
+<a asp-controller="Kullanici" asp-action="Index" class="btn btn-secondary mb-3">Kullanıcılara Dön</a>
+
+<div class="row">
+    <div class="col-md-6">
+        <h4>Mevcut Yetkiler</h4>
+        @if (mevcutYetkiler.Any())
+        {
+            <table class="table table-bordered">
+                <tbody>
+                    @foreach (var ky in mevcutYetkiler)
+                    {
+                        <tr>
+                            <td>@ky.Yetki.Ad</td>
+                            <td style="width:1%;">
+                                <form asp-action="YetkiKaldir" method="post">
+                                    <input type="hidden" name="kullaniciId" value="@kullanici.Id" />
+                                    <input type="hidden" name="yetkiId" value="@ky.YetkiId" />
+                                    <button type="submit" class="btn btn-sm btn-danger">Kaldır</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p class="text-muted">Henüz yetki atanmamış.</p>
+        }
+    </div>
+
+    <div class="col-md-6">
+        <h4>Eklenebilecek Yetkiler</h4>
+        <table class="table table-bordered">
+            <tbody>
+                @foreach (var y in tumYetkiler.Where(t => !mevcutIdler.Contains(t.Id)))
+                {
+                    <tr>
+                        <td>@y.Ad</td>
+                        <td style="width:1%;">
+                            <form asp-action="YetkiAta" method="post">
+                                <input type="hidden" name="kullaniciId" value="@kullanici.Id" />
+                                <input type="hidden" name="yetkiId" value="@y.Id" />
+                                <button type="submit" class="btn btn-sm btn-success">Ata</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

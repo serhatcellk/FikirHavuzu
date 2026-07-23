@@ -1,0 +1,31 @@
+@model FikirHavuzu.Entities.Fikir
+@using FikirHavuzu.Entities
+
+@{
+    ViewData["Title"] = "Değerlendir";
+}
+
+<h2>Fikir Değerlendir</h2>
+
+<div class="mb-3 p-3 border rounded">
+    <strong>Başlık:</strong> @Model.Baslik<br />
+    <strong>Açıklama:</strong> @Model.Aciklama<br />
+    <strong>Öneri Sahibi:</strong> @Model.Kullanici?.Ad @Model.Kullanici?.Soyad
+</div>
+
+<form asp-action="Degerlendir" method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <div class="alert alert-info" style="background:#eff6ff;border:1px solid #bfdbfe;color:#1e40af;border-radius:8px;">
+        70 ve üzeri puan → fikir <strong>kabul</strong> edilir ve sahibine ödül verilir. Altı → red.
+    </div>
+    <div class="mb-2">
+        <label>Değerlendirme Açıklaması</label>
+        <textarea name="aciklama" class="form-control" rows="3">@Model.DegerlendirmeAciklamasi</textarea>
+    </div>
+    <div class="mb-2">
+        <label>Puan (0-100)</label>
+        <input type="number" name="puan" min="0" max="100" value="@Model.Puan" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success mt-2">Kaydet</button>
+    <a asp-action="Index" class="btn btn-secondary mt-2">İptal</a>
+</form>

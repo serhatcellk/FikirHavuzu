@@ -1,0 +1,30 @@
+@model List<FikirHavuzu.Entities.Kullanici>
+
+@{
+    ViewData["Title"] = "Liderlik Tablosu";
+}
+
+<h2>🏆 Liderlik Tablosu</h2>
+<p class="text-muted">Başarılı fikirlerden kazanılan ödül puanları.</p>
+
+<table class="table table-bordered" style="max-width:600px;">
+    <thead>
+        <tr>
+            <th>Sıra</th>
+            <th>Ad Soyad</th>
+            <th>Ödül Puanı</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{ int sira = 1; }
+        @foreach (var k in Model)
+        {
+            <tr>
+                <td>@sira</td>
+                <td>@k.Ad @k.Soyad</td>
+                <td>@k.OdulPuani</td>
+            </tr>
+            sira++;
+        }
+    </tbody>
+</table>
