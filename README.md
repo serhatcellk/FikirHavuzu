@@ -147,9 +147,9 @@ Uygulama varsayılan olarak `http://localhost:5292` adresinde çalışır.
 
 | Rol | Mail | Şifre |
 |---|---|---|
-| Admin | `serhat@fikirhavuzu.com` | |
-| Degerlendirici | `degerlendirici@fikirhavuzu.com` |  |
-| Kullanici | `kullanici@fikirhavuzu.com` |  |
+| Admin | `serhat@fikirhavuzu.com` |'Sifre123' |
+| Degerlendirici | `degerlendirici@fikirhavuzu.com` | 'Sifre123' |
+| Kullanici | `kullanici@fikirhavuzu.com` |'Sifre123'  |
 
 > Bu hesaplar yalnızca test amaçlıdır.
 
